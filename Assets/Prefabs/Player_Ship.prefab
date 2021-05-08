@@ -1680,6 +1680,9 @@ MonoBehaviour:
   pitchMovement: -10
   yawFactor: 1.6
   rollMovement: -20
+  lasers:
+  - {fileID: 97166414678171190}
+  - {fileID: 2298947038525847547}
 --- !u!1 &87727479910295081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,7 +2149,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8218154900137385314, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
       propertyPath: m_Name
-      value: Laser_001
+      value: Laser_Left
       objectReference: {fileID: 0}
     - target: {fileID: 9013328569571962673, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
       propertyPath: m_RootOrder
@@ -2194,6 +2197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
+--- !u!1 &2298947038525847547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8218154900137385314, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
+  m_PrefabInstance: {fileID: 7920495226942646937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1224564470792095144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9013328569571962673, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
@@ -2208,7 +2216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8218154900137385314, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
       propertyPath: m_Name
-      value: Laser
+      value: Laser_Right
       objectReference: {fileID: 0}
     - target: {fileID: 9013328569571962673, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
       propertyPath: m_RootOrder
@@ -2256,6 +2264,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
+--- !u!1 &97166414678171190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8218154900137385314, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
+  m_PrefabInstance: {fileID: 8310816976090858324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1026876332788280421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9013328569571962673, guid: bf413914f9db2e547a3878933a85dfa6, type: 3}
