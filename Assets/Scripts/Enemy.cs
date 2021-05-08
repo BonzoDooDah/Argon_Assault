@@ -3,22 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-    [SerializeField] private int points = 100;
-    [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private Transform parent;
+    [SerializeField] private int numberOfHits = 3;
+    [SerializeField] private int scorePerHit = 5;
+    [SerializeField] private GameObject hitPrefab = null;
+    [SerializeField] private GameObject explosionPrefab = null;
+    [SerializeField] private Transform parent = null;
 
-    private ScoreBoard _scoreBoard;
+    private ScoreBoard _scoreBoard = null;
 
     private void Start() {
         _scoreBoard = FindObjectOfType<ScoreBoard>();
     }
 
     private void OnParticleCollision(GameObject other) {
-        _scoreBoard.IncreaseScore(points);
+        ProcessHit();
+        if (numberOfHits < 1) ProcessDestruction();
+    }
 
-        GameObject obj = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        obj.transform.parent = parent;
+    private void ProcessHit() {
+        if (hitPrefab) {
+            GameObject obj = Instantiate(hitPrefab, transform.position, Quaternion.identity);
+            if (parent) obj.transform.parent = parent;
+        }
+        numberOfHits--;
+        _scoreBoard.IncreaseScore(scorePerHit);
+    }
 
+    private void ProcessDestruction() {
+        if (explosionPrefab) {
+            GameObject obj = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            if (parent) obj.transform.parent = parent;
+        }
         Destroy(gameObject);
     }
 }

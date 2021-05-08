@@ -331,7 +331,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04220d57331c87b4187cd613252db343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 100
+  numberOfHits: 3
+  scorePerHit: 5
+  hitPrefab: {fileID: 3200836327345539238, guid: 8c3e2631f459a764c83334dc6f5d7634, type: 3}
   explosionPrefab: {fileID: 3200836327345539238, guid: 50701e678ad974f43847ded37ef4786c, type: 3}
   parent: {fileID: 191776078}
 --- !u!1 &724646607
@@ -442,7 +444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04220d57331c87b4187cd613252db343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 100
+  numberOfHits: 3
+  scorePerHit: 5
+  hitPrefab: {fileID: 3200836327345539238, guid: 8c3e2631f459a764c83334dc6f5d7634, type: 3}
   explosionPrefab: {fileID: 3200836327345539238, guid: 50701e678ad974f43847ded37ef4786c, type: 3}
   parent: {fileID: 191776078}
 --- !u!1 &728404760
@@ -553,7 +557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04220d57331c87b4187cd613252db343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 100
+  numberOfHits: 3
+  scorePerHit: 5
+  hitPrefab: {fileID: 3200836327345539238, guid: 8c3e2631f459a764c83334dc6f5d7634, type: 3}
   explosionPrefab: {fileID: 3200836327345539238, guid: 50701e678ad974f43847ded37ef4786c, type: 3}
   parent: {fileID: 191776078}
 --- !u!95 &1095634760 stripped
